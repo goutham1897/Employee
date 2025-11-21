@@ -108,6 +108,10 @@ public class EmpDao {
 	public List<Employee>getidDetails(int a){
 		return er.getidDetails(a);
 	}
+	public Employee getDatas(int a) {
+		Employee e=er.findById(a).get();
+				return e;
+	}
 
 }
 
